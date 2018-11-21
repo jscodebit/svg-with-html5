@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+.app-svg {
+    background-color: #eee;
+}
+.header-box {
+    border-bottom: 4px solid #000;
+}
+.m-0 {
+    margin: 0 !important;
+}
+.m-t-0 {
+    margin-top: 0 !important;
+}
+.m-b-20 {
+    margin-bottom: 20px !important;
+}
+.p-20 {
+    padding: 40px 0;
+}
+.svg-world-map {
+    width: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #b3def3;
+}
+.svg-world-map .svg-mapbox-area {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.mapbox {
+    height: 150px;
+    position: relative;
+    animation: mapbox-anim 5s linear infinite;
+}
+
+@keyframes mapbox-anim {
+    from {left: 0px;}
+    to {left: 50px;}
+}
+#recycle {
+    animation-name: rotate-recycle;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate-recycle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#car-1 {
+    animation-name: car-1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes car-1 {
+    0% {transform: translate(50px);}
+    100% {transform: translate(-400px);}
+}
+
+#car-2 {
+    animation-name: car-1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes car-2 {
+    0% {transform: translate(250px);}
+    100% {transform: translate(-400px);}
+}
+
