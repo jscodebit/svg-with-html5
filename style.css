@@ -1507,3 +1507,10 @@ svg {
     }
 }
 /*-- Star5 CSS End --*/
+
+@media only screen and (max-width: 768px) {
+    .tdd-mainbox {
+        width: 320px;
+        margin: 0 auto;
+    }
+}
